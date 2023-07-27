@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+.flex-box-left .desktop-image{
+    height: 600px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.flex-box-right{
+    background-color: white;
+    height: 600px;
+    width:auto;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+}
+.perfume{
+    padding:40px;
+    font-size: 14px;
+    letter-spacing: 5px;
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+.name{
+    font-size:50px;
+    padding-left:40px;
+    width:300px;
+    line-height: 0.9em;
+    font-weight: 800;
+   
+    
+    
+    
+}
+.description{
+    font-size:20px;
+    padding:40px;
+    width:300px;
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+.Price-tag{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.price{
+    font-size: 40px;
+    color:hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+}
+.old-price{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color:hsl(228, 12%, 48%);
+}
+.btn{
+   position: relative;
+   margin:30px;
+   margin-left:50px;
+   text-align: center;
+   padding:20px 80px;
+   background-color: hsl(158, 36%, 37%);
+   border: none;
+   border-radius: 5px;
+   font-size: 17px;
+   color: white;
+   cursor: pointer;
+   font-family: 'Montserrat', sans-serif;
+}
+.btn:hover{
+    background-color: hsl(158, 53%, 24%);
+    transition: 0.5s;
+}
+span{
+    margin-right:10px;
+}
+.mobile-image{
+    display: none;
+}
+
+@media (max-width:375px) {
+    .container{
+        flex-direction: column;
+       
+    }
+    .flex-box-left .desktop-image{
+        display: none;
+    }
+    .mobile-image{
+        display: block;
+        width: 380px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .name{
+        font-size: 35px;
+        margin-top:-30px;
+        margin-bottom:-20px;
+    }
+    .description{
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+    .Price-tag{
+        justify-content: flex-start;
+        margin-left:40px;
+    }
+    .price{
+        padding-right:25px;
+    }
+    .old-price{
+        font-size: 17px;
+    }
+    .btn{
+        margin-bottom: 35px;
+    }
+    .flex-box-right{
+        height: auto;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius:5px;
+    }
+}
